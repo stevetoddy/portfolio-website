@@ -50,13 +50,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.5rem;
+    background: url(images/hero-malik-skydsgaard-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    padding: 2rem 0;
 }
 
 #main-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 50%;
     font-family: 'Poppins', sans-serif;
     width: 100%;
 }
@@ -73,14 +76,46 @@ main {
     font-size: 8.6vw;
 }
 
+#main-info p {
+    margin: 1rem 0 ;
+}
+
+/* HERO IMAGE */
+
+/* section {
+    background: url(images/hero-lucas-andrade-unsplash.jpg) no-repeat center;
+    border-radius: 50%;
+    height: 650px;
+    width: 650px;
+    transform: translateX(5vw)translateY(-80vw);
+    z-index: 1;
+} */
+
+/* #hero-img {
+    display: flex;
+    width: 100%;
+    height:auto;
+}
+
+#hero-img img {
+    width: 10%;
+    border-radius: 50%;
+
+} */
 /* SOCIAL LINKS */
 
 #social-links {
     display: flex;
     justify-content: space-between;
     width: 77%;
+    margin: 2rem 0;
 }
  #social-links img {
     width: clamp(2rem, 2.7rem, 4rem);
     margin: 0 0.5rem;
+ }
+
+ footer {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
  }
