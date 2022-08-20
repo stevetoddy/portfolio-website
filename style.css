@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
 
 /* GLOBAL */
 
@@ -22,7 +22,7 @@ header {
     justify-content: center;
     text-align: center;
     padding: 0.5rem;
-    font-size: 3.5vw;
+    font-size: 4.1vw;
     font-family:  'Poppins', sans-serif;
 }
 
