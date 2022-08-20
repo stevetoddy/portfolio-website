@@ -43,3 +43,44 @@ nav a {
     justify-content: space-between;
     
 }
+
+/* MAIN INFORMATION */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+#main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+#main-info h2 {
+    width: 75%;
+    text-align: center;
+    font-size: 12vw;
+}
+
+#main-info h3 {
+    width: 75%;
+    text-align: center;
+    font-size: 8.6vw;
+}
+
+/* SOCIAL LINKS */
+
+#social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+}
+ #social-links img {
+    width: clamp(2rem, 2.7rem, 4rem);
+    margin: 0 0.5rem;
+ }
