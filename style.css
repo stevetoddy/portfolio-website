@@ -10,7 +10,8 @@
 
 body {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    background-color: rgb(247, 238, 230);
 }
 
 /* HEADER - MOBILE */
@@ -55,18 +56,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-main p {
-    font-size: 6.7vw;
-    text-align: center;
-    font-weight: 300;
+    width: 90%;
 }
 
 #hero-image {
     border-radius: 50%;
     width: 100%;
-    height: 85vw;
+    height: 80vw;
     border: 4px solid #7490B3;
 }
 
@@ -94,6 +90,12 @@ main p {
     color: #7490B3;
 }
 
+main p {
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 300;
+}
+
 /* SOCIAL LINKS - MOBILE */
 
 #social-links {
@@ -118,6 +120,8 @@ main p {
     font-weight: 300;
  }
 
+/* TABLET VIEW */
+
  @media screen and (min-width: 700px) and (max-width: 1200px) {
    
    /* HEADER - TABLET */
@@ -140,33 +144,36 @@ main p {
     #home-info {
         display: flex;
         flex-direction: row-reverse;
-        width: 100%;
+        width: 90%;
     }
 
     #hero-image {
-        height: 30vw;
+        width: 100%;
+        height: auto;
         flex: 1;
-        margin: 0 1rem 0 4rem;
+        margin: 0 0 0 4rem;
     }
 
     #main-info {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         font-family: 'Poppins', sans-serif;
-        justify-content;
         width: 100%;
         flex: 2;
     }
 
     #main-info h2 {
         width: 100%;
+        text-align: left;  
         font-size: 8vw;
         margin: -1rem 0 0 0;
+   
     }
 
     #main-info h3 {
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 5.7vw;
         margin: -2rem 0 0 0;
     }
@@ -199,6 +206,8 @@ main p {
         margin: 10vw 0 0 0;
     }
 }
+
+/* DESKTOP VIEW */
 
 @media screen and (min-width: 1200px) and (max-width: 1950px) {
 
@@ -233,7 +242,7 @@ main p {
         width: 100%;
         height: 50vw;
         padding: 0 2.5rem;
-        background: url(images/hero-malik-skydsgaard-unsplash\ \(copy\).jpg) no-repeat center;
+        background: url(images/hero-malik-skydsgaard-unsplash\ -wide.jpg) no-repeat center;
     }
 
     #home-info {
@@ -262,7 +271,6 @@ main p {
         font-size: 6vw;
         margin: -1rem 0 0 0;
         text-align: left;
-
     }
 
     #main-info h3 {
@@ -270,7 +278,6 @@ main p {
         font-size: 4.4vw;
         margin: -2rem 0 0 0;
         text-align: left;
-
     }
 
     #main-info p {
@@ -303,6 +310,8 @@ main p {
         margin: 10vw 0 0 0;
     }
 }    
+
+/* LARGE FIXED VIEW */
 
 @media screen and (min-width: 1950px) {
      
@@ -343,7 +352,7 @@ main p {
         width: 100%;
         height: 1000px;
         padding: 0 50px;
-        background: url(images/hero-malik-skydsgaard-unsplash\ \(copy\).jpg) no-repeat center;
+        background: url(images/hero-malik-skydsgaard-unsplash\ -wide.jpg) no-repeat center;
     }
 
     #home-info {
