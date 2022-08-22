@@ -41,6 +41,7 @@ nav {
 nav a {
     text-decoration: none;
     justify-content: space-between;
+    color: #7490B3;
     
 }
 
@@ -50,9 +51,24 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(images/hero-malik-skydsgaard-unsplash.jpg) no-repeat center;
-    background-size: cover;
-    padding: 2rem 0;
+}
+
+#home-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    font-size: 6.7vw;
+    text-align: center;
+}
+
+#hero-image {
+    border-radius: 50%;
+    width: 100%;
+    height: 85vw;
+    border: 4px solid #7490B3;
 }
 
 #main-info {
@@ -65,57 +81,106 @@ main {
 }
 
 #main-info h2 {
-    width: 75%;
+    width: 100%;
     text-align: center;
-    font-size: 12vw;
+    font-size: 15vw;
+    color: #7490B3;
+    margin: 0 0 -1.5rem 0;
 }
 
 #main-info h3 {
-    width: 75%;
-    text-align: center;
-    font-size: 8.6vw;
-}
-
-#main-info p {
-    margin: 1rem 0 ;
-}
-
-/* HERO IMAGE */
-
-/* section {
-    background: url(images/hero-lucas-andrade-unsplash.jpg) no-repeat center;
-    border-radius: 50%;
-    height: 650px;
-    width: 650px;
-    transform: translateX(5vw)translateY(-80vw);
-    z-index: 1;
-} */
-
-/* #hero-img {
-    display: flex;
     width: 100%;
-    height:auto;
+    text-align: center;
+    font-size: 10.5vw;
+    color: #7490B3;
 }
 
-#hero-img img {
-    width: 10%;
-    border-radius: 50%;
-
-} */
 /* SOCIAL LINKS */
 
 #social-links {
     display: flex;
     justify-content: space-between;
-    width: 77%;
-    margin: 2rem 0;
+    width: 90%;
+    margin: 2rem;
 }
  #social-links img {
-    width: clamp(2rem, 2.7rem, 4rem);
-    margin: 0 0.5rem;
+    width: 20%;
+    margin: 1rem;
+    border-radius: 50%;
  }
 
+/* FOOTER */
+
  footer {
-    text-align: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 6rem 0;
+ }
+
+ @media screen and (min-width: 650px) and (max-width: 1000px) {
+    /* MAIN INFORMATION */
+
+    main {
+        display: flex;
+    }
+
+
+
+    #home-info {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    #hero-image {
+        border-radius: 50%;
+        width: 30%;
+        height: 40vw;
+        border: 4px solid #7490B3;
+        flex: 1;
+        margin:2.5rem;
+    }
+
+    #main-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        flex: 1.5;
+    }
+
+    #main-info h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+        color: #7490B3;
+        margin: 0 0 -1.5rem 0;
+    }
+
+    #main-info h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+        color: #7490B3;
+    }
+
+    #main-info p {
+        font-size: 2vw;
+    }
+
+    /* SOCIAL LINKS */
+
+    #social-links {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 2rem;
+    }
+    #social-links img {
+        width: 20%;
+        margin: 1rem;
+        border-radius: 50%;
+    }
  }
