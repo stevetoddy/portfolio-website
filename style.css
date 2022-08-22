@@ -13,6 +13,9 @@ body {
     flex-direction: column; 
 }
 
+svg:hover {
+    fill: red;
+}
 /* HEADER */
 
 header {
@@ -116,7 +119,7 @@ main p {
     margin: 6rem 0;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1200px) {
+ @media screen and (min-width: 700px) and (max-width: 1300px) {
    
    /* HEADER */
 
