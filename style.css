@@ -119,7 +119,7 @@ main p {
     margin: 6rem 0;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1300px) {
+ @media screen and (min-width: 700px) and (max-width: 1200px) {
    
    /* HEADER */
 
@@ -198,5 +198,218 @@ main p {
     footer {
         font-size: 1.5vw;
         margin: 4rem 0 0 0
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1950px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 2.5rem;
+    }
+
+    header h1 {
+        font-size: 4vw;
+        flex: 2;
+        text-align: left;
+        width: 100%;
+        margin: 0 3rem 0 0;
+    }
+
+    nav {
+        display: flex;
+        flex: 1;
+        font-size: 1vw;
+        margin: 0;
+        transform: translateY(-15px);
+    }
+
+    /* MAIN INFORMATION */
+
+    main {
+        display: flex;
+        width: 100%;
+        height: 50vw;
+        padding: 0 2.5rem;
+        background: url(images/hero-malik-skydsgaard-unsplash\ \(copy\).jpg) no-repeat center;
+    }
+
+    #home-info {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 10% 0 0 0;
+    }
+
+    #hero-image {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    #main-info {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #main-info h2 {
+        width: 100%;
+        font-size: 6vw;
+        margin: -1rem 0 0 0;
+        text-align: left;
+
+    }
+
+    #main-info h3 {
+        width: 100%;
+        font-size: 4.4vw;
+        margin: -2rem 0 0 0;
+        text-align: left;
+
+    }
+
+    #main-info p {
+        font-size: 2.5vw;
+    }
+
+    #main-info p:nth-of-type(1) {
+        margin: 2rem 0 0;
+    }
+
+    /* SOCIAL LINKS */
+
+    #social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 16vw 0 0 0;
+    }
+    #social-links img {
+        width: 5%;
+        margin: 3.7vw 2.5vw 0;
+        
+    }
+
+    /* FOOTER */
+
+    footer {
+        font-size: 1vw;
+        margin: 8vw 0 0 0
+    }
+}    
+
+@media screen and (min-width: 1950px) {
+     
+    /* BODY */
+
+    body {
+        max-width: 1900px;
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+
+     header {
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        font-size: max(80px);
+        flex: 2;
+        text-align: left;
+        width: 100%;
+        margin: 0 3rem 0 0;
+    }
+
+    nav {
+        display: flex;
+        flex: 1;
+        font-size: max(20px);
+        margin: 0;
+        transform: translateY(-15px);
+    }
+
+    /* MAIN INFORMATION */
+
+    main {
+        display: flex;
+        width: 100%;
+        height: 1000px;
+        padding: 0 50px;
+        background: url(images/hero-malik-skydsgaard-unsplash\ \(copy\).jpg) no-repeat center;
+    }
+
+    #home-info {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 160px 0 0 0;
+    }
+
+    #hero-image {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    #main-info {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #main-info h2 {
+        width: 100%;
+        font-size: 120px;
+        margin: 70px 0 0 0;
+        text-align: left;
+
+    }
+
+    #main-info h3 {
+        width: 100%;
+        font-size: 88px;
+        margin: -50px 0 0 0;
+        text-align: left;
+
+    }
+
+    #main-info p {
+        font-size: 40px;
+    }
+
+    #main-info p:nth-of-type(1) {
+        margin: 2rem 0 0;
+    }
+
+    /* SOCIAL LINKS */
+
+    #social-links {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 270px 0 100px 0;
+
+    }
+    #social-links img {
+        width: 5%;
+        margin: 70px 50px 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+        font-size: 20px;
+        margin: 100px 0 0 0
     }
 }
