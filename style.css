@@ -13,10 +13,7 @@ body {
     flex-direction: column; 
 }
 
-svg:hover {
-    fill: red;
-}
-/* HEADER */
+/* HEADER - MOBILE */
 
 header {
     display: flex;
@@ -46,7 +43,7 @@ nav a {
     color: #7490B3;  
 }
 
-/* MAIN INFORMATION */
+/* MAIN INFORMATION - MOBILE */
 
 main {
     display: flex;
@@ -63,6 +60,7 @@ main {
 main p {
     font-size: 6.7vw;
     text-align: center;
+    font-weight: 300;
 }
 
 #hero-image {
@@ -96,7 +94,7 @@ main p {
     color: #7490B3;
 }
 
-/* SOCIAL LINKS */
+/* SOCIAL LINKS - MOBILE */
 
 #social-links {
     display: flex;
@@ -110,18 +108,19 @@ main p {
     border-radius: 50%;
  }
 
-/* FOOTER */
+/* FOOTER - MOBILE */
 
  footer {
     font-family: 'Poppins', sans-serif;
     font-size: 3.5vw;
     text-align: center;
-    margin: 6rem 0;
+    margin: auto 0 0;
+    font-weight: 300;
  }
 
  @media screen and (min-width: 700px) and (max-width: 1200px) {
    
-   /* HEADER */
+   /* HEADER - TABLET */
 
     nav {
         width: 86%;
@@ -129,7 +128,7 @@ main p {
         padding: 0 0.5rem;
     }
 
-    /* MAIN INFORMATION */
+    /* MAIN INFORMATION - TABLET */
 
     main {
         display: flex;
@@ -152,9 +151,9 @@ main p {
 
     #main-info {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         font-family: 'Poppins', sans-serif;
+        justify-content;
         width: 100%;
         flex: 2;
     }
@@ -180,7 +179,7 @@ main p {
         margin: 2rem 0 0;
     }
 
-    /* SOCIAL LINKS */
+    /* SOCIAL LINKS - TABLET */
 
     #social-links {
         display: flex;
@@ -193,17 +192,17 @@ main p {
         margin: 2rem 2rem 0;
     }
 
-    /* FOOTER */
+    /* FOOTER - TABLET */
 
     footer {
         font-size: 1.5vw;
-        margin: 4rem 0 0 0
+        margin: 10vw 0 0 0;
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1950px) {
 
-    /* HEADER */
+    /* HEADER - DESKTOP */
 
     header {
         display: flex;
@@ -227,7 +226,7 @@ main p {
         transform: translateY(-15px);
     }
 
-    /* MAIN INFORMATION */
+    /* MAIN INFORMATION - DESKTOP */
 
     main {
         display: flex;
@@ -282,7 +281,7 @@ main p {
         margin: 2rem 0 0;
     }
 
-    /* SOCIAL LINKS */
+    /* SOCIAL LINKS - DESKTOP */
 
     #social-links {
         display: flex;
@@ -297,24 +296,24 @@ main p {
         
     }
 
-    /* FOOTER */
+    /* FOOTER - DESKTOP */
 
     footer {
         font-size: 1vw;
-        margin: 8vw 0 0 0
+        margin: 10vw 0 0 0;
     }
 }    
 
 @media screen and (min-width: 1950px) {
      
-    /* BODY */
+    /* BODY - LARGE FIXED */
 
     body {
         max-width: 1900px;
         margin: 0 auto;
     }
 
-    /* HEADER */
+    /* HEADER - LARGE FIXED */
 
      header {
         flex-direction: row;
@@ -337,7 +336,7 @@ main p {
         transform: translateY(-15px);
     }
 
-    /* MAIN INFORMATION */
+    /* MAIN INFORMATION - LARGE FIXED */
 
     main {
         display: flex;
@@ -373,7 +372,6 @@ main p {
         font-size: 120px;
         margin: 70px 0 0 0;
         text-align: left;
-
     }
 
     #main-info h3 {
@@ -385,20 +383,20 @@ main p {
     }
 
     #main-info p {
-        font-size: 40px;
+        font-size: 35px;  
     }
 
     #main-info p:nth-of-type(1) {
         margin: 2rem 0 0;
     }
 
-    /* SOCIAL LINKS */
+    /* SOCIAL LINKS - LARGE FIXED */
 
     #social-links {
         display: flex;
         justify-content: center;
         width: 90%;
-        margin: 270px 0 100px 0;
+        margin: 300px 0 100px 0;
 
     }
     #social-links img {
@@ -406,10 +404,11 @@ main p {
         margin: 70px 50px 0;
     }
 
-    /* FOOTER */
+    /* FOOTER - LARGE FIXED */
 
     footer {
         font-size: 20px;
-        margin: 100px 0 0 0
+        margin-bottom: 0;
+        margin-top: 200px;
     }
 }
