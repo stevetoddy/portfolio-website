@@ -14,6 +14,11 @@ body {
     background-color: rgb(247, 238, 230);
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
 /* HEADER - MOBILE */
 
 header {
@@ -28,7 +33,7 @@ header {
 header h1 {   
     font-size: 8.7vw;
     margin: 1rem 0 0;
-    width: 90.5%;
+    width: 100%;
 }
 
 nav {
@@ -225,7 +230,7 @@ main img:active {
     }
     
     main h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     main img {
@@ -366,7 +371,3 @@ main img:active {
         margin-top: 100px;
     }
 }
-
-
-/* Nav bar weighting with social links */
-/* black on  */
