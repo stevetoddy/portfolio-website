@@ -110,17 +110,24 @@ main p {
 
 /* SOCIAL LINKS - MOBILE */
 
-#social-links {
+ #social-links {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 2rem;
 }
- #social-links img {
-    width: 13%;
-    margin: 1rem;
-    border-radius: 50%;
- }
+
+#social-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    margin: 4vw 0 0;
+}
+
+#social-links img {
+    width: 60%;
+}
 
 /* FOOTER - MOBILE */
 
@@ -203,20 +210,26 @@ main p {
 
     #social-links {
         display: flex;
-        justify-content: center;
-        width: 90%;
-        margin: 5rem 0 0 0;
+        width: 30vw;
     }
+    
+    #social-links a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10vw;
+        margin: 4vw 0 0;
+    }
+
     #social-links img {
-        width: 5%;
-        margin: 2rem 1rem 0;
+        width: 60%;
     }
 
     /* FOOTER - TABLET */
 
     footer {
         font-size: 1.5vw;
-        margin: 10vw 0 0 0;
+        margin: 1vw 0 0 0;
     }
 }
 
@@ -308,13 +321,19 @@ main p {
 
     #social-links {
         display: flex;
+        width: 30vw;
+    }
+    
+    #social-links a{
+        display: flex;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        margin: 21vw 0 0 0;
+        width: 7vw;
+        margin: 18.5vw 0;
     }
+
     #social-links img {
-        width: 4%;
+        width: 50%;
     }
 
     /* FOOTER - DESKTOP */
@@ -421,21 +440,28 @@ main p {
 
     #social-links {
         display: flex;
+        width: 500px
+    }
+    
+    #social-links a{
+        display: flex;
         justify-content: center;
-        width: 90%;
-        margin: 290px 0 100px 0;
+        align-items: center;
+        width: 140px;
+        margin: 245px 30px 100px 0;
+    }
 
-    }
     #social-links img {
-        width: 3%;
+        width: 70%;
     }
+
 
     /* FOOTER - LARGE FIXED */
 
     footer {
         font-size: 15px;
         margin-bottom: 0;
-        margin-top: 100px;
+        margin-top: 110px;
     }
 }
 
