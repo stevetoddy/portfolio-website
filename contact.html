@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Steve</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <h1>STEVAN TODOROVIC</h1>
+        <!-- NAV BAR START -->
+        <nav>
+            <div>
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div>
+                <a href="">CONTACT</a>
+            </div>
+            <div>
+                <a href="blogs.html">BLOGS</a>
+            </div>  
+        </nav>
+    </header>
+    <div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Request</label>
+            </div>
+            <div class="col-75">
+              <select id="request" name="Request">
+                <option value="call-me">Call Me</option>
+                <option value="email-me">Email Me</option>
+                <option value="yell-me">Yell Across the Room</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div> 
+</body>
+</html>
