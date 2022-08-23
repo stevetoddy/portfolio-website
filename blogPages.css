@@ -164,24 +164,30 @@ p {
     header {
         display: flex;
         flex-direction: row;
-        padding: 1rem 2.5rem;
+        padding: 1rem 2.5rem; 
+    }
+    
+    #h1-a {
+        display: flex;
+        flex: 2;
+        margin: 0 3rem 0 0;
     }
 
     header h1 {
+        display:flex;
         font-size: 4vw;
-        flex: 2;
         text-align: left;
         width: 100%;
         margin: 0 3rem 0 0;
     }
-
+   
     nav {
         display: flex;
         flex: 1;
         font-size: 1.5vw;
         font-weight: 300;
         margin: 0;
-        transform: translateY(-15px);
+        transform: translateY(-10px);
     }
 
     /* MAIN INFORMATION - DESKTOP */
