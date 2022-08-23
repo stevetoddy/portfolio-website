@@ -88,7 +88,17 @@ h2 {
     font-size: 1.3rem;
     padding: 1rem 2.5rem;
     border: 4px solid black;
-    box-shadow: 7px 7px;
+}
+
+.h2-header-group a:active {
+    transform: translateY(-15px) translateX(-15px);
+    transition: 1s;
+    cursor: pointer; 
+}
+
+.h2-header-group a:active {
+    box-shadow: 10px 10px #7490B3;
+    transition: 1s;
 }
 
 main img {
@@ -169,6 +179,17 @@ article h3 {
         flex: 2;
     }
 
+    .h2-header-group a:active {
+        transform: translateY(-15px) translateX(-15px);
+        transition: 1s;
+        cursor: pointer; 
+    }
+    
+    .h2-header-group a:active {
+        box-shadow: 10px 10px #7490B3;
+        transition: 1s;
+    }
+
     /* SOCIAL LINKS - TABLET */
 
     #social-links {
@@ -247,6 +268,17 @@ article h3 {
     .about-articles {
         padding: 2rem;
         flex: 2;
+    }
+
+    .h2-header-group a:hover {
+        transform: translateY(-15px) translateX(-15px);
+        transition: 1s;
+        cursor: pointer; 
+    }
+    
+    .h2-header-group a:hover {
+        box-shadow: 10px 10px #7490B3;
+        transition: 1s;
     }
 
     /* SOCIAL LINKS - DESKTOP */
@@ -334,7 +366,17 @@ article h3 {
         font-size: 1.5rem;
         padding: 1rem 2.5rem;
         border: 4px solid black;
-        box-shadow: 7px 7px;
+    }
+
+    .h2-header-group a:hover {
+        transform: translateY(-15px) translateX(-15px);
+        transition: 1s;
+        cursor: pointer; 
+    }
+    
+    .h2-header-group a:hover {
+        box-shadow: 10px 10px #7490B3;
+        transition: 1s;
     }
     
     .about-articles {
