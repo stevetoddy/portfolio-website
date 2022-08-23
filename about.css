@@ -138,6 +138,34 @@ article h3 {
 
     /* MAIN INFORMATION - TABLET */
 
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .h2-header-group {
+        display: flex;
+        padding: 2rem;
+        text-align: center;
+        flex: 1;
+    } 
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    main img {
+        display: flex;
+        border-radius: 50%;
+        width: 30vw;
+        height: 30vw;
+    }
+    
+    .about-articles {
+        padding: 2rem;
+        flex: 2;
+    }
 
     /* SOCIAL LINKS - TABLET */
 
