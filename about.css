@@ -31,7 +31,7 @@ header h1 {
     width: 90.5%;
 }
 
-#h1-link:visited {
+/* #h1-link:visited {
     text-decoration: none;
     color: #000000;
 }
@@ -39,7 +39,7 @@ header h1 {
 #h1-link:active {
     text-decoration: none;
     color: #000000;
-} 
+}  */
 
 nav {
     display: flex;
@@ -64,63 +64,54 @@ main {
     align-items: center;
 }
 
-#home-info {
+.h2-header-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-}
-
-#hero-image {
-    border-radius: 50%;
-    width: 90vw;
-    height: 90vw;
-    /* border: 4px solid #7490B3; */
-}
-
-#main-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 50%;
     font-family: 'Poppins', sans-serif;
-    width: 100%;
+    text-decoration: none;
 }
 
-#main-info h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 15vw;
-    color: #7490B3;
-    margin: 0 0 -1.5rem 0;
-}
-
-#main-info h3 {
-    width: 100%;
-    text-align: center;
-    font-size: 10.5vw;
-    color: #7490B3;
-}
-
-main p {
-    font-size: 5vw;
-    text-align: center;
-    font-weight: 300;
-}
-
-/* SOCIAL LINKS - MOBILE */
-
-#social-links {
+h2 {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 2rem;
+    justify-content: center;
+    font-size: 9vw;
+    color: #000000; 
+    width: 100%;
+    margin-bottom: 2rem;
 }
- #social-links img {
-    width: 13%;
-    margin: 1rem;
+
+.h2-header-group a {
+    color: #7490B3;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    margin: 2rem 0 2rem;
+    box-shadow: 5px 5px;
+}
+
+main img {
+    display: flex;
     border-radius: 50%;
- }
+    width: 50vw;
+    height: 50vw;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0 1rem 1rem;
+    padding: 0 1rem 1rem;
+}
+
+article h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
 
 /* FOOTER - MOBILE */
 
@@ -128,7 +119,7 @@ main p {
     font-family: 'Poppins', sans-serif;
     font-size: 3.5vw;
     text-align: center;
-    margin: auto 0 0;
+    margin: 4rem 0 0;
     font-weight: 300;
  }
 
@@ -147,57 +138,6 @@ main p {
 
     /* MAIN INFORMATION - TABLET */
 
-    main {
-        display: flex;
-        width: 100%;
-        padding: 0 2rem;
-        margin: 3rem 0 0 0;
-    }
-
-    #home-info {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 95%;
-    }
-
-    #hero-image {
-        width: 100%;
-        height: auto;
-        flex: 1;
-        margin: 0 0 0 4rem;
-    }
-
-    #main-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-family: 'Poppins', sans-serif;
-        width: 100%;
-        flex: 2;
-    }
-
-    #main-info h2 {
-        width: 100%;
-        text-align: left;  
-        font-size: 8vw;
-        margin: -1rem 0 0 0;
-        transform: translateX(-5px);
-    }
-
-    #main-info h3 {
-        width: 100%;
-        text-align: left;
-        font-size: 5.7vw;
-        margin: -2rem 0 0 0;
-    }
-
-    #main-info p {
-        font-size: 2vw;
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
-    }
 
     /* SOCIAL LINKS - TABLET */
 
@@ -251,58 +191,6 @@ main p {
 
     /* MAIN INFORMATION - DESKTOP */
 
-    main {
-        display: flex;
-        width: 100%;
-        height: 50vw;
-        padding: 0 2.5rem;
-        background: url(images/hero-malik-skydsgaard-unsplash\ -wide.jpg) no-repeat center;
-    }
-
-    #home-info {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 10% 0 0 0;
-    }
-
-    #hero-image {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
-    }
-
-    #main-info {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Poppins', sans-serif;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    #main-info h2 {
-        width: 100%;
-        font-size: 6.1vw;
-        margin: -1rem 0 0 0;
-        text-align: left;
-        transform: translateX(-4.5px);
-    }
-
-    #main-info h3 {
-        width: 100%;
-        font-size: 4.4vw;
-        margin: -2rem 0 0 0;
-        text-align: left;
-    }
-
-    #main-info p {
-        color: #5e748f;
-        font-size: 2vw;
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
-    }
 
     /* SOCIAL LINKS - DESKTOP */
 
@@ -363,59 +251,6 @@ main p {
 
     /* MAIN INFORMATION - LARGE FIXED */
 
-    main {
-        display: flex;
-        width: 100%;
-        height: 900px;
-        padding: 0 50px;
-        background: url(images/hero-malik-skydsgaard-unsplash\ -wide.jpg) no-repeat center;
-    }
-
-    #home-info {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 160px 0 0 0;
-    }
-
-    #hero-image {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
-    }
-
-    #main-info {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Poppins', sans-serif;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    #main-info h2 {
-        width: 100%;
-        font-size: 121px;
-        margin: 70px 0 0 0;
-        text-align: left;
-        transform: translateX(-7px);
-    }
-
-    #main-info h3 {
-        width: 100%;
-        font-size: 87px;
-        margin: -50px 0 0 0;
-        text-align: left;
-
-    }
-
-    #main-info p {
-        color: #5e748f;
-        font-size: 35px;  
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
-    }
 
     /* SOCIAL LINKS - LARGE FIXED */
 
