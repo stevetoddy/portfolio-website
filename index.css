@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
 
 /* GLOBAL */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:  'Poppins', sans-serif;
 } 
 
 body {
@@ -15,14 +15,10 @@ body {
 }
 
 /* HEADER - MOBILE */
-
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family:  'Poppins', sans-serif;
 }
 
 header h1 {   
@@ -31,16 +27,7 @@ header h1 {
     width: 90.5%;
 }
 
-#h1-link:visited {
-    text-decoration: none;
-    color: #000000;
-}
-
-#h1-link:active {
-    text-decoration: none;
-    color: #000000;
-} 
-
+/* NAVIAGTION BAR - MOBILE */
 nav {
     display: flex;
     justify-content: space-between;
@@ -57,94 +44,91 @@ nav a {
 }
 
 /* MAIN INFORMATION - MOBILE */
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#home-info {
+.home-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
 }
 
-#hero-image {
+.hero-image {
     border-radius: 50%;
-    width: 90vw;
     height: 90vw;
-    /* border: 4px solid #7490B3; */
+    width: 90vw;
 }
 
-#main-info {
+.main-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 50%;
-    font-family: 'Poppins', sans-serif;
     width: 100%;
+    color: #7490B3;
 }
 
-#main-info h2 {
-    width: 100%;
+.main-info h2 {
     text-align: center;
     font-size: 15vw;
-    color: #7490B3;
     margin: 0 0 -1.5rem 0;
+    width: 100%;
 }
 
-#main-info h3 {
-    width: 100%;
+.main-info h3 {
     text-align: center;
     font-size: 10.5vw;
-    color: #7490B3;
+    width: 100%;
 }
 
-main p {
-    font-size: 5vw;
+.main-info p {
+    width: 100%;
     text-align: center;
+    font-size: 5.8vw;
+    color: #000000;
     font-weight: 300;
+    margin-top: -1.5vw 0 1.5rem;
 }
 
 /* SOCIAL LINKS - MOBILE */
-
- #social-links {
+.social-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     width: 90%;
-    margin: 2rem;
+    margin: 0.5rem 0 1.5rem;
 }
 
-#social-links a{
+.social-links a{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 20vw;
-    margin: 4vw 0 0;
 }
 
-#social-links img {
+.social-links img {
     width: 60%;
 }
 
 /* FOOTER - MOBILE */
-
- footer {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.5vw;
+footer {
+    font-size: 4vw;
     text-align: center;
-    margin: auto 0 0;
     font-weight: 300;
  }
 
-/* TABLET VIEW */
+ 
+ .copyright {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+ }
 
- @media screen and (min-width: 700px) and (max-width: 1200px) {
+/* TABLET VIEW */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
    
     /* HEADER - TABLET */
-
     nav {
         width: 91%;
         font-size: 2rem;
@@ -153,7 +137,6 @@ main p {
     }
 
     /* MAIN INFORMATION - TABLET */
-
     main {
         display: flex;
         width: 100%;
@@ -161,29 +144,28 @@ main p {
         margin: 3rem 0 0 0;
     }
 
-    #home-info {
+    .home-info {
         display: flex;
         flex-direction: row-reverse;
         width: 95%;
     }
 
-    #hero-image {
+    .hero-image {
         width: 100%;
         height: auto;
         flex: 1;
         margin: 0 0 0 4rem;
     }
 
-    #main-info {
+    .main-info {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        font-family: 'Poppins', sans-serif;
         width: 100%;
         flex: 2;
     }
 
-    #main-info h2 {
+    .main-info h2 {
         width: 100%;
         text-align: left;  
         font-size: 8vw;
@@ -191,54 +173,56 @@ main p {
         transform: translateX(-5px);
     }
 
-    #main-info h3 {
+    .main-info h3 {
         width: 100%;
         text-align: left;
         font-size: 5.7vw;
-        margin: -2rem 0 0 0;
+        margin: -1.5rem 0 0 0;
     }
 
-    #main-info p {
-        font-size: 2vw;
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
+    .main-info p {
+        text-align: left;
+        font-size: 3.25vw;
+        transform: translateX(-2px);
+        margin: -0.7rem 0 0;
     }
 
     /* SOCIAL LINKS - TABLET */
-
-    #social-links {
+    .social-links {
         display: flex;
         width: 30vw;
+        margin: 3.5vw 0 2vw;
     }
     
-    #social-links a{
+    .social-links a{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 10vw;
-        margin: 4vw 0 0;
+        margin: 0;
     }
 
-    #social-links img {
-        width: 60%;
+    .social-links img {
+        width: 70%;
     }
 
     /* FOOTER - TABLET */
-
     footer {
-        font-size: 1.5vw;
-        margin: 1vw 0 0 0;
-    }
+        font-size: 2.3vw;
+        text-align: center;
+        font-weight: 300;
+     }
+    
+     .copyright {
+        font-size: 0.8rem;
+        margin-top: 5vw;
+     }
 }
 
 /* DESKTOP VIEW */
-
 @media screen and (min-width: 1200px) and (max-width: 1800px) {
 
     /* HEADER - DESKTOP */
-
     header {
         display: flex;
         flex-direction: row;
@@ -263,7 +247,7 @@ main p {
     }
 
     /* MAIN INFORMATION - DESKTOP */
-
+    /* SHOW BACKGROUND IMAGE */
     main {
         display: flex;
         width: 100%;
@@ -272,28 +256,27 @@ main p {
         background: url(images/hero-malik-skydsgaard-unsplash\ -wide.jpg) no-repeat center;
     }
 
-    #home-info {
+    .home-info {
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        margin: 10% 0 0 0;
+        margin: 15vw 0 0 0;
     }
-
-    #hero-image {
+    /* HIDE HERO IMAGE */
+    .hero-image {
         visibility: hidden;
         width: 0%;
         height: 0%;
     }
 
-    #main-info {
+    .main-info {
         display: flex;
         flex-direction: column;
-        font-family: 'Poppins', sans-serif;
         width: 100%;
         align-items: flex-start;
     }
 
-    #main-info h2 {
+    .main-info h2 {
         width: 100%;
         font-size: 6.1vw;
         margin: -1rem 0 0 0;
@@ -301,63 +284,62 @@ main p {
         transform: translateX(-4.5px);
     }
 
-    #main-info h3 {
+    .main-info h3 {
         width: 100%;
         font-size: 4.4vw;
         margin: -2rem 0 0 0;
         text-align: left;
     }
 
-    #main-info p {
-        color: #5e748f;
-        font-size: 2vw;
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
+    .main-info p {
+        color: #445161;
+        font-size: 2.5vw;
+        text-align: left;
+        margin: -0.8rem 0 0 0;
     }
 
     /* SOCIAL LINKS - DESKTOP */
-
-    #social-links {
+    .social-links {
         display: flex;
-        width: 30vw;
+        width: 30%;
+        margin: 11.3vw 0 0 0;
     }
     
-    #social-links a{
+    .social-links a{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 7vw;
-        margin: 19.5vw 0;
+        width: 60%;
     }
 
-    #social-links img {
+    .social-links img {
         width: 50%;
     }
 
     /* FOOTER - DESKTOP */
-
     footer {
-        font-size: 15px;
-        margin-bottom: 0;
-        margin-top: 7.5vw;
-    }
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 8vw;
+     }
+    
+     .copyright {
+        font-size: 0.8rem;
+        margin-top: 5vw;
+     }
 }    
 
 /* LARGE FIXED VIEW */
-
 @media screen and (min-width: 1800px) {
      
     /* BODY - LARGE FIXED */
-
     body {
         max-width: 1900px;
         margin: 0 auto;
     }
 
     /* HEADER - LARGE FIXED */
-
      header {
         flex-direction: row;
         padding: 1rem 0;
@@ -381,7 +363,7 @@ main p {
     }
 
     /* MAIN INFORMATION - LARGE FIXED */
-
+    /* SHOW BACKGROUND IMAGE */
     main {
         display: flex;
         width: 100%;
@@ -390,20 +372,21 @@ main p {
         background: url(images/hero-malik-skydsgaard-unsplash\ -wide.jpg) no-repeat center;
     }
 
-    #home-info {
+    .home-info {
         display: flex;
         justify-content: flex-start;
         width: 100%;
         margin: 160px 0 0 0;
     }
 
-    #hero-image {
+    /* HIDE HERO IMAGE */
+    .hero-image {
         visibility: hidden;
         width: 0%;
         height: 0%;
     }
 
-    #main-info {
+    .main-info {
         display: flex;
         flex-direction: column;
         font-family: 'Poppins', sans-serif;
@@ -411,7 +394,7 @@ main p {
         align-items: flex-start;
     }
 
-    #main-info h2 {
+    .main-info h2 {
         width: 100%;
         font-size: 121px;
         margin: 70px 0 0 0;
@@ -419,48 +402,49 @@ main p {
         transform: translateX(-7px);
     }
 
-    #main-info h3 {
+    .main-info h3 {
         width: 100%;
         font-size: 87px;
         margin: -50px 0 0 0;
         text-align: left;
     }
 
-    #main-info p {
-        color: #5e748f;
-        font-size: 35px;  
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
+    .main-info p {
+        color: #445161;
+        font-size: 49px;
+        text-align: left;
+        margin: -30px 0 0 0;
     }
 
     /* SOCIAL LINKS - LARGE FIXED */
-
-    #social-links {
+    .social-links {
         display: flex;
-        width: 500px
+        width: 500px;
+        margin: 205px 0 200px 0;
     }
     
-    #social-links a {
+    .social-links a {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 140px;
-        margin: 260px 30px 100px 0;
     }
 
-    #social-links img {
-        width: 70%;
+    .social-links img {
+        width: 60%;
     }
-
 
     /* FOOTER - LARGE FIXED */
-
     footer {
-        font-size: 15px;
-        margin-bottom: 0;
-        margin-top: 110px;
-    }
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 150px;
+     }
+    
+     .copyright {
+        font-size: 0.8rem;
+        margin-top: 5vw;
+     }
 }
 

@@ -1,12 +1,12 @@
-/* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
- 
-/* GLOBAL STYLE RULES */
+
+/* GLOBAL */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+    font-family:  'Poppins', sans-serif;
+} 
 
 body {
     display: flex;
@@ -14,38 +14,20 @@ body {
     background-color: rgb(247, 238, 230);
 }
 
-
-
 /* HEADER - MOBILE */
-
-/* HEADLINE STYLES */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family:  'Poppins', sans-serif;
 }
 
 header h1 {   
     font-size: 8.7vw;
     margin: 1rem 0 0;
-    width: 90.5%;
+    width: 100%;
 }
 
-/* REMOVE HEADLINE LINK AESTHETICS */
-#h1-link:visited {
-    text-decoration: none;
-    color: #000000;
-}
-
-#h1-link:active {
-    text-decoration: none;
-    color: #000000;
-} 
-
-/* NAVIGATION BAR STYLES */
+/* NAVIAGTION BAR - MOBILE */
 nav {
     display: flex;
     justify-content: space-between;
@@ -61,11 +43,38 @@ nav a {
     color: #7490B3;  
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* MAIN INFORMATION - MOBILE */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 9vw;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+p {
+    text-align: center;
+    margin: 0 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 1.5rem;
+    width: 98vw;
+}
+
 /* FORM STYLES */
- 
 /* Style inputs, select elements and textareas */
- 
- input[type=text], select, textarea {
+input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -74,18 +83,14 @@ nav a {
     resize: vertical;
   }
   
-
 /* LABLES NEXT TO INPUTS */
- 
-  label {
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-  }
+}
   
-
 /* SUBMIT BUTTON */
- 
-  input[type=submit] {
+input[type=none] {
     background-color: #7490B3;
     color: white;
     padding: 12px 20px;
@@ -93,197 +98,73 @@ nav a {
     border-radius: 4px;
     cursor: pointer;
     float: right;
-  }
-
+}
 
 /* OVERARCHING MAIN CONTAINER */
-
-  .main-form {
+.main-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-
-/* FORM CONTAINER */
- 
-  .container {
+/* FORM CONTAINER */ 
+.container {
     border-radius: 5px;
     background-color: rgb(247, 238, 230);
     padding: 4.5vw;
     max-width: 1200px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
-  }
+}
   
-
 /* LABEL COLUMN: 25% WIDTH */
- 
-  .col-25 {
+.col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
-  }
+}
   
-
 /* LABEL COLUMN: 75% WIDTH */
-
-  .col-75 {
+.col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
-  }
+}
   
 
 /* Clear floats after the columns */
- 
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-
-/* CONTACT PAGE TEXT STYLES */
-.contact-text  {
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-}
-
-.contact-text h2 {
-    font-size: 9vw;
-    margin: 1vw 0 0 0;
-    text-align: center;
-}
-
-.contact-text p {
-    width: 100%;
-    font-size: 33.5px;
-    margin: 0 0 0 0;
-    text-align: center;
-
 }
   
-
-  /* MOBILE VIEW - FORM */
- 
-@media screen and (max-width: 600px) {
+/* MOBILE VIEW - FORM */
+@media screen and (max-width: 700px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1900px) {
-    .container { 
-        width: 42vw;
-        margin: 0 60vw 0 0;
-        padding-top: 3vw;
-        background-color: transparent;
+    .container {
+        width: 98vw;
     }
-}      
-
-/* TABLET & DESKTOP - FORM */
-
-@media screen and (min-width: 1900px) {
-    .container { 
-        width: 900px;
-        margin: 30px 1050px 0 0;
-        background-color: transparent;
-    }
-}      
- 
-
-
-
-/* MAIN INFORMATION - MOBILE */
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
-#home-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-}
-
-#hero-image {
-    border-radius: 50%;
-    width: 90vw;
-    height: 90vw;
-    /* border: 4px solid #7490B3; */
-}
-
-#main-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 50%;
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-}
-
-#main-info h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 15vw;
-    color: #7490B3;
-    margin: 0 0 -1.5rem 0;
-}
-
-#main-info h3 {
-    width: 100%;
-    text-align: center;
-    font-size: 10.5vw;
-    color: #7490B3;
-}
-
-main p {
-    font-size: 5vw;
-    text-align: center;
-    font-weight: 300;
-}
-
-/* SOCIAL LINKS - MOBILE */
-
- #social-links {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 2rem;
-}
-
-#social-links a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20vw;
-    margin: 4vw 0 0;
-}
-
-#social-links img {
-    width: 60%;
-}
-
+   
 /* FOOTER - MOBILE */
 
- footer {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.5vw;
+footer {
     text-align: center;
-    margin: auto 0 0;
     font-weight: 300;
+    margin: 2rem 0 1rem;
+ }
+ 
+ .copyright {
+    font-size: 3vw;
  }
 
 /* TABLET VIEW */
-
- @media screen and (min-width: 700px) and (max-width: 1200px) {
+@media screen and (min-width: 700px) and (max-width: 1200px) {
    
-    /* HEADER - TABLET */
-
+   /* HEADER - TABLET */
     nav {
         width: 91%;
         font-size: 2rem;
@@ -292,106 +173,51 @@ main p {
     }
 
     /* MAIN INFORMATION - TABLET */
-
     main {
-        display: flex;
-        width: 100%;
-        padding: 0 2rem;
-        margin: 3rem 0 0 0;
-    }
-
-    #home-info {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 95%;
-    }
-
-    #hero-image {
-        width: 100%;
-        height: auto;
-        flex: 1;
-        margin: 0 0 0 4rem;
-    }
-
-    #main-info {
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        font-family: 'Poppins', sans-serif;
-        width: 100%;
-        flex: 2;
     }
 
-    #main-info h2 {
-        width: 100%;
-        text-align: left;  
-        font-size: 8vw;
-        margin: -1rem 0 0 0;
-        transform: translateX(-5px);
+    h2 {
+        font-size: 2.5rem;
     }
 
-    #main-info h3 {
-        width: 100%;
-        text-align: left;
-        font-size: 5.7vw;
-        margin: -2rem 0 0 0;
-    }
-
-    #main-info p {
-        font-size: 2vw;
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
-    }
-
-    /* SOCIAL LINKS - TABLET */
-
-    #social-links {
-        display: flex;
-        width: 30vw;
-    }
-    
-    #social-links a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10vw;
-        margin: 4vw 0 0;
-    }
-
-    #social-links img {
-        width: 60%;
-    }
+    /* FORM STYLE - TABLET */
+    .container {
+        max-width: 900px;
+        width: 98vw;
+    } 
 
     /* FOOTER - TABLET */
-
     footer {
         font-size: 1.5vw;
-        margin: 1vw 0 0 0;
+        margin: 10vw 0 0 0;
     }
 }
 
 /* DESKTOP VIEW */
-
 @media screen and (min-width: 1200px) and (max-width: 1800px) {
 
     /* HEADER - DESKTOP */
-
     header {
         display: flex;
         flex-direction: row;
-        padding: 1rem 2.5rem;
+        padding: 1rem 2.5rem; 
+    }
+    
+    #h1-a {
+        display: flex;
+        flex: 2;
+        margin: 0 3rem 0 0;
     }
 
     header h1 {
+        display:flex;
         font-size: 4vw;
-        flex: 2;
         text-align: left;
         width: 100%;
         margin: 0 3rem 0 0;
     }
-
+   
     nav {
         display: flex;
         flex: 1;
@@ -402,80 +228,22 @@ main p {
     }
 
     /* MAIN INFORMATION - DESKTOP */
-
     main {
-        display: flex;
-        width: 100%;
-        height: 50vw;
-        padding: 0 2.5rem;
-    }
-
-    #home-info {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 10% 0 0 0;
-    }
-
-    #hero-image {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
-    }
-
-    #main-info {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Poppins', sans-serif;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    #main-info h2 {
-        width: 100%;
-        font-size: 6.1vw;
-        margin: -1rem 0 0 0;
-        text-align: left;
-        transform: translateX(-4.5px);
-    }
-
-    #main-info h3 {
-        width: 100%;
-        font-size: 4.4vw;
-        margin: -2rem 0 0 0;
-        text-align: left;
-    }
-
-    #main-info p {
-        color: #5e748f;
-        font-size: 2vw;
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
-    }
-
-    /* SOCIAL LINKS - DESKTOP */
-
-    #social-links {
-        display: flex;
-        width: 30vw;
+        padding-top: 2rem;
     }
     
-    #social-links a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 7vw;
-        margin: 19.5vw 0;
+    h2 {
+        font-size: 3rem;
     }
-
-    #social-links img {
-        width: 50%;
+    .main-form {
+        width: 900px;
+    }
+    .container {
+        margin: 0;
+        width: 900px;
     }
 
     /* FOOTER - DESKTOP */
-
     footer {
         font-size: 15px;
         margin-bottom: 0;
@@ -501,6 +269,12 @@ main p {
         padding: 1rem 0;
     }
 
+    #h1-a {
+        display: flex;
+        flex: 2;
+        margin: 0 3rem 0 0;
+    }
+
     header h1 {
         font-size: max(80px);
         flex: 2;
@@ -519,21 +293,27 @@ main p {
     }
 
     /* MAIN INFORMATION - LARGE FIXED */
-
+ 
     main {
-        display: flex;
-        width: 100%;
-        height: 900px;
-        padding: 0 50px;
+        padding-top: 2rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    .main-form {
+        width: 900px;
+    }
+    .container {
+        margin: 0;
+        width: 900px;
     }
 
     /* FOOTER - LARGE FIXED */
-
     footer {
+        text-align: center;
         font-size: 15px;
         margin-bottom: 0;
-        margin-top: 110px;
+        margin-top: 100px;
     }
 }
-
-
