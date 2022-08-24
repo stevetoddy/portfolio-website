@@ -1,8 +1,7 @@
- /* Style inputs with type="text", select elements and textareas */
-
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
- /* GLOBAL */
-
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+ 
+/* GLOBAL STYLE RULES */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,8 +14,11 @@ body {
     background-color: rgb(247, 238, 230);
 }
 
+
+
 /* HEADER - MOBILE */
 
+/* HEADLINE STYLES */
 header {
     display: flex;
     flex-direction: column;
@@ -32,6 +34,7 @@ header h1 {
     width: 90.5%;
 }
 
+/* REMOVE HEADLINE LINK AESTHETICS */
 #h1-link:visited {
     text-decoration: none;
     color: #000000;
@@ -42,6 +45,7 @@ header h1 {
     color: #000000;
 } 
 
+/* NAVIGATION BAR STYLES */
 nav {
     display: flex;
     justify-content: space-between;
@@ -56,6 +60,140 @@ nav a {
     justify-content: space-between;
     color: #7490B3;  
 }
+
+/* FORM STYLES */
+ 
+/* Style inputs, select elements and textareas */
+ 
+ input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+
+/* LABLES NEXT TO INPUTS */
+ 
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+
+/* SUBMIT BUTTON */
+ 
+  input[type=submit] {
+    background-color: #7490B3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+
+/* OVERARCHING MAIN CONTAINER */
+
+  .main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+/* FORM CONTAINER */
+ 
+  .container {
+    border-radius: 5px;
+    background-color: rgb(247, 238, 230);
+    padding: 4.5vw;
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+  
+
+/* LABEL COLUMN: 25% WIDTH */
+ 
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+
+/* LABEL COLUMN: 75% WIDTH */
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+
+/* Clear floats after the columns */
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* CONTACT PAGE TEXT STYLES */
+.contact-text  {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.contact-text h2 {
+    font-size: 9vw;
+    margin: 1vw 0 0 0;
+    text-align: center;
+}
+
+.contact-text p {
+    width: 100%;
+    font-size: 33.5px;
+    margin: 0 0 0 0;
+    text-align: center;
+
+}
+  
+
+  /* MOBILE VIEW - FORM */
+ 
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+    .container { 
+        width: 42vw;
+        margin: 0 60vw 0 0;
+        padding-top: 3vw;
+        background-color: transparent;
+    }
+}      
+
+/* TABLET & DESKTOP - FORM */
+
+@media screen and (min-width: 1900px) {
+    .container { 
+        width: 900px;
+        margin: 30px 1050px 0 0;
+        background-color: transparent;
+    }
+}      
+ 
+
+
 
 /* MAIN INFORMATION - MOBILE */
 
@@ -270,7 +408,6 @@ main p {
         width: 100%;
         height: 50vw;
         padding: 0 2.5rem;
-        background: url(images/hero-malik-skydsgaard-unsplash\ -wide.jpg) no-repeat center;
     }
 
     #home-info {
@@ -388,74 +525,7 @@ main p {
         width: 100%;
         height: 900px;
         padding: 0 50px;
-        background: url(images/hero-malik-skydsgaard-unsplash\ -wide.jpg) no-repeat center;
     }
-
-    #home-info {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 160px 0 0 0;
-    }
-
-    #hero-image {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
-    }
-
-    #main-info {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Poppins', sans-serif;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    #main-info h2 {
-        width: 100%;
-        font-size: 121px;
-        margin: 70px 0 0 0;
-        text-align: left;
-        transform: translateX(-7px);
-    }
-
-    #main-info h3 {
-        width: 100%;
-        font-size: 87px;
-        margin: -50px 0 0 0;
-        text-align: left;
-
-    }
-
-    #main-info p {
-        color: #5e748f;
-        font-size: 35px;  
-    }
-
-    #main-info p:nth-of-type(1) {
-        margin: 2rem 0 0;
-    }
-
-    /* SOCIAL LINKS - LARGE FIXED */
-
-    #social-links {
-        display: flex;
-        width: 500px
-    }
-    
-    #social-links a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 140px;
-        margin: 260px 30px 100px 0;
-    }
-
-    #social-links img {
-        width: 70%;
-    }
-
 
     /* FOOTER - LARGE FIXED */
 
@@ -467,70 +537,3 @@ main p {
 }
 
 
- /* FORM STYLES */
- 
- /* Style inputs, select elements and textareas */
- input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
-  
-  /* Style the label to display next to the inputs */
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  /* Style the submit button */
-  input[type=submit] {
-    background-color: #7490B3;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  /* Style the container */
-  .container {
-    border-radius: 5px;
-    background-color: rgb(247, 238, 230);
-    padding: 4.5vw;
-    max-width: 1500px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-  }
-  
-  /* Floating column for labels: 25% width */
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  /* Floating column for inputs: 75% width */
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  } 
