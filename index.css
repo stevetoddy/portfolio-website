@@ -234,7 +234,7 @@ footer {
 }
 
 /* DESKTOP VIEW */
-@media screen and (min-width: 1200px) and (max-width: 1800px) {
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
 
     /* HEADER - DESKTOP */
     header {
@@ -350,7 +350,7 @@ footer {
 }    
 
 /* LARGE FIXED VIEW */
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1900px) {
      
     /* BODY - LARGE FIXED */
     body {
