@@ -176,7 +176,6 @@ footer {
     }
 
     /* FOOTER - TABLET */
-
     footer {
         font-size: 1.5vw;
         margin: 10vw 0 0 0;
@@ -184,11 +183,9 @@ footer {
 }
 
 /* DESKTOP VIEW */
-
 @media screen and (min-width: 1200px) and (max-width: 1900px) {
 
     /* HEADER - DESKTOP */
-
     header {
         display: flex;
         flex-direction: row;
@@ -219,7 +216,6 @@ footer {
     }
     
     /* MAIN INFORMATION - DESKTOP */
-
     main {
         width: 100%;
         padding-top: 2rem;
@@ -266,7 +262,6 @@ footer {
     
 
     /* FOOTER - DESKTOP */
-
     footer {
         font-size: 15px;
         margin-bottom: 0;
@@ -275,18 +270,15 @@ footer {
 }    
 
 /* LARGE FIXED VIEW */
-
 @media screen and (min-width: 1900px) {
      
     /* BODY - LARGE FIXED */
-
     body {
         max-width: 1900px;
         margin: 0 auto;
     }
 
     /* HEADER - LARGE FIXED */
-
      header {
         flex-direction: row;
         padding: 1rem 0;
@@ -316,7 +308,6 @@ footer {
     }
 
     /* MAIN INFORMATION - LARGE FIXED */
- 
     main {
         width: 100%;
     }
@@ -328,8 +319,8 @@ footer {
     main img {
         display: flex;
         border-radius: 13%;
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
     }
 
     .about-articles {
@@ -340,7 +331,7 @@ footer {
     }
 
     article {
-        width: 33%;
+        width: 20%;
         flex-wrap: wrap;
         transition: 1s;
     }
@@ -360,21 +351,7 @@ footer {
         transition: 1s;
     }
 
-    /* SOCIAL LINKS - LARGE FIXED */
-
-    #social-links {
-        display: flex;
-        justify-content: center;
-        width: 90%;
-        margin: 265px 0 100px 0;
-
-    }
-    #social-links img {
-        width: 3%;
-    }
-
     /* FOOTER - LARGE FIXED */
-
     footer {
         font-size: 15px;
         margin-bottom: 0;

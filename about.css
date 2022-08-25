@@ -129,10 +129,6 @@ footer {
         font-size: 2rem;
         padding: 0 0.5rem;
         font-weight: 300;
-    }
-
-    /* MAIN INFORMATION - TABLET */
-    main {
         flex-direction: row;
         align-items: flex-start;
         width: 100%;
@@ -243,8 +239,11 @@ footer {
     .h2-header-group a:hover {
         transform: translateY(-15px) translateX(-15px);
         transition: 1s;
-        cursor: pointer; 
+        cursor: pointer;
+        box-shadow: 10px 10px #7490B3;
+        transition: 1s; 
     }
+    
     
     .h2-header-group a:hover {
         box-shadow: 10px 10px #7490B3;

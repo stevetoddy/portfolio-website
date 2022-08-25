@@ -1,10 +1,10 @@
 ## WEBSITE LINK  
 
----
+https://stevetoddy.github.io/portfolio-website/
 
 ## GITHUB REPOSITORY LINK  
 
----
+https://github.com/stevetoddy/portfolio-website
 
 ## Purpose, Goals and Target Audience  
 

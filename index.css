@@ -194,8 +194,6 @@ footer {
         margin: -0.7rem 0 0;
     }
 
-
-
     /* FOOTER - TABLET */
     footer {
         display: flex;
@@ -355,6 +353,7 @@ footer {
     /* BODY - LARGE FIXED */
     body {
         max-width: 1900px;
+        /* max-height: 1300px; */
         margin: 0 auto;
     }
 
@@ -439,7 +438,7 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        font-size: 1.5vw;
+        font-size: 30px;
         font-weight: 300;
         margin-top: 50px;
      }
