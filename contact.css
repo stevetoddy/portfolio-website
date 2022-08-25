@@ -60,12 +60,12 @@ h2 {
     justify-content: center;
     font-size: 9vw;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 p {
     text-align: center;
-    margin: 0 1rem 2rem;
+    margin: 0 1rem;
     font-size: 1rem;
     font-weight: 300;
     padding: 0 1.5rem;
@@ -110,7 +110,7 @@ input[type=submit] {
 /* FORM CONTAINER */ 
 .container {
     border-radius: 5px;
-    background-color: rgb(247, 238, 230);
+    background-color: transparent;
     padding: 4.5vw;
     max-width: 1200px;
     font-weight: 300;
@@ -231,7 +231,6 @@ footer {
     main {
         padding-top: 2rem;
     }
-    
     h2 {
         font-size: 3rem;
     }
@@ -290,12 +289,8 @@ footer {
     }
 
     /* MAIN INFORMATION - LARGE FIXED */
-    main {
-        padding-top: 2rem;
-    }
-    
     h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .main-form {
         width: 900px;
@@ -303,6 +298,8 @@ footer {
     .container {
         margin: 0;
         width: 900px;
+        transform: translateY(-2vw);
+
     }
 
     /* FOOTER - LARGE FIXED */

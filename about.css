@@ -129,14 +129,12 @@ footer {
         font-size: 2rem;
         padding: 0 0.5rem;
         font-weight: 300;
-        flex-direction: row;
-        align-items: flex-start;
-        width: 100%;
     }
 
+    /* MAIN - TABLET */
     .h2-header-group {
         display: flex;
-        padding: 2rem;
+        padding:0 2rem 2rem;
         flex: 1;
     } 
 

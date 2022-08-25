@@ -70,6 +70,7 @@ main img {
     border-radius: 13%;
     width: 60vw;
     height: 60vw;
+    transition: 1s;
 }
 
 article {
@@ -90,10 +91,6 @@ article h3 {
 article p {
     padding: 0 1rem 1rem;
     font-size: 1rem;
-}
-
-main img {
-    transition: 1s;
 }
 
 article:active {
@@ -143,7 +140,6 @@ footer {
     }
 
     main img {
-        display: flex;
         border-radius: 13%;
         width: 40vw;
         height: 40vw;
@@ -158,21 +154,6 @@ footer {
     article {
         width: 50%;
         flex-wrap: wrap;
-    }
-
-    main img {
-        transition: 1s;
-    }
-
-    article:active {
-        transform: translateY(-20px) translateX(-20px);
-        transition: 1s;
-        cursor: pointer; 
-    }
-
-    main img:active {
-        box-shadow: 15px 15px #7490B3;
-        transition: 1s;
     }
 
     /* FOOTER - TABLET */
@@ -228,8 +209,14 @@ footer {
     main img {
         display: flex;
         border-radius: 13%;
-        width: 28vw;
-        height: 28vw;
+        width: 22vw;
+        height: 22vw;
+        transition: 1s;
+    }
+
+    article {
+        width: 33%;
+        transition: 1s;
     }
 
     .about-articles {
@@ -237,16 +224,6 @@ footer {
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    article {
-        width: 33%;
-        flex-wrap: wrap;
-        transition: 1s;
-    }
-
-    main img {
-        transition: 1s;
     }
 
     article:hover {
@@ -319,8 +296,9 @@ footer {
     main img {
         display: flex;
         border-radius: 13%;
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
+        transition: 1s;
     }
 
     .about-articles {
@@ -331,12 +309,8 @@ footer {
     }
 
     article {
-        width: 20%;
+        width: 30%;
         flex-wrap: wrap;
-        transition: 1s;
-    }
-
-    main img {
         transition: 1s;
     }
 
