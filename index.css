@@ -15,7 +15,7 @@ body {
 }
 
 /* HEADER - MOBILE */
-header {
+/* header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,6 +25,33 @@ header h1 {
     font-size: 8.7vw;
     margin: 1rem 0 0;
     width: 90.5%;
+}
+
+/* NAVIAGTION BAR - MOBILE */
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 5.7vw;
+    font-weight: 300;
+    width: 90%;
+    margin: 0 1rem 2rem 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    justify-content: space-between;
+    color: #7490B3;  
+} */ 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {   
+    font-size: 8.7vw;
+    margin: 1rem 0 0;
+    width: 100%;
 }
 
 /* NAVIAGTION BAR - MOBILE */
@@ -43,6 +70,11 @@ nav a {
     color: #7490B3;  
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
 /* MAIN INFORMATION - MOBILE */
 main {
     display: flex;
@@ -59,8 +91,8 @@ main {
 
 .hero-image {
     border-radius: 50%;
-    height: 90vw;
-    width: 90vw;
+    height: 50vw;
+    width: 50vw;
 }
 
 .main-info {
@@ -74,21 +106,21 @@ main {
 
 .main-info h2 {
     text-align: center;
-    font-size: 15vw;
+    font-size: 14vw;
     margin: 0 0 -1.5rem 0;
     width: 100%;
 }
 
 .main-info h3 {
     text-align: center;
-    font-size: 10.5vw;
+    font-size: 10vw;
     width: 100%;
 }
 
 .main-info p {
     width: 100%;
     text-align: center;
-    font-size: 5.8vw;
+    font-size: 5.5vw;
     color: #000000;
     font-weight: 300;
     margin-top: -1.5vw 0 1.5rem;
@@ -112,7 +144,7 @@ footer {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    width: 95%;
+    width: 85%;
     margin: 0.5rem 0;
 }
 
@@ -238,17 +270,24 @@ footer {
     header {
         display: flex;
         flex-direction: row;
-        padding: 1rem 2.5rem;
+        padding: 1rem 2.5rem; 
+        justify-items: flex-end;
+    }
+    
+    #h1-a {
+        display: flex;
+        flex: 2;
+        margin: 0 3rem 0 0;
     }
 
     header h1 {
+        display:flex;
         font-size: 4vw;
-        flex: 2;
         text-align: left;
         width: 100%;
         margin: 0 3rem 0 0;
     }
-
+   
     nav {
         display: flex;
         flex: 1;
@@ -274,6 +313,7 @@ footer {
         width: 100%;
         margin: 15vw 0 0 0;
     }
+
     /* HIDE HERO IMAGE */
     .hero-image {
         visibility: hidden;
@@ -353,7 +393,7 @@ footer {
     /* BODY - LARGE FIXED */
     body {
         max-width: 1900px;
-        /* max-height: 1300px; */
+  
         margin: 0 auto;
     }
 
@@ -361,6 +401,12 @@ footer {
      header {
         flex-direction: row;
         padding: 1rem 0;
+    }
+
+    #h1-a {
+        display: flex;
+        flex: 2;
+        margin: 0 3rem 0 0;
     }
 
     header h1 {
