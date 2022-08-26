@@ -11,6 +11,7 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     background-color: rgb(247, 238, 230);
 }
 
@@ -154,7 +155,8 @@ input[type=submit] {
 footer {
     text-align: center;
     font-weight: 300;
-    margin: 2rem 0 1rem;
+    margin-bottom: 1rem;
+    margin-top: auto;
  }
  
  .copyright {
@@ -190,7 +192,8 @@ footer {
     /* FOOTER - TABLET */
     footer {
         font-size: 1.5vw;
-        margin: 10vw 0 0 0;
+        margin-bottom: 1rem;
+        margin-top: auto;
     }
 }
 
@@ -245,9 +248,8 @@ footer {
     /* FOOTER - DESKTOP */
     footer {
         font-size: 15px;
-        margin-bottom: 0;
-        margin-top: 7.5vw;
-    }
+        margin-bottom: 1rem;
+        margin-top: auto;
 }    
 
 /* LARGE FIXED VIEW */
@@ -306,8 +308,8 @@ footer {
     footer {
         text-align: center;
         font-size: 15px;
-        margin-bottom: 0;
-        bottom: 0;
+        margin-bottom: 1rem;
+        margin-top: auto;
     }
 
     footer p {
