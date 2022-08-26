@@ -30,13 +30,40 @@ The pages are listed below with a brief overview.
 
 ## Sitemap
 
-![Sitemap](images/site-map-portfolio-web.png)
+![Sitemap](images/site-screenshots/site-map-portfolio-web.png)
+ 
+Each page is connected to each other using the Navigation Links and the Headline as the Home Page link. There are 5 blog post pages linked to the Blog Page and I have a link to a PDF Resume, from the About Page.
 
 ---
 
-## Screenshots
+## Screenshots  
 
+### Home Page
+
+![Home Page](images/overviews/home-overview1.png)
+
+### About Page
+
+![About Page](images/overviews/about-overview.png)
+
+### Contact Page
+
+![Contact Page](images/overviews/contact-overview.png)
+
+### Blog Page
+
+![Blog Page](images/overviews/blogs-overview.png)
+
+### Blog Example
+
+![Blog Example](images/overviews/blogexample-overview.png)
 
 ---
 
-## Tech Stack (e.g. html, css, deployment platform, etc)
+## Tech Stack
+
+- Wireframs and design: Figma and Shotwell Viewer
+- Website: HTML and CSS
+- Form backend: Formspree  
+- Repository: Github
+- Deployment and Hosting: Github Pages
