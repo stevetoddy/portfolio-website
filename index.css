@@ -171,7 +171,7 @@ main {
     }
 
     .hero-image {
-        width: 100%;
+        width: 30vw;
         height: auto;
         flex: 1;
         margin: 0 0 0 4rem;
@@ -363,7 +363,7 @@ main {
     }
 
     .social-links img {
-        width: 60%;
+        width: 50%;
     }
 
     #phone-number {
